@@ -346,7 +346,7 @@ class MySettingWidgetState : State<MySettingStatefulWidget>
                                                         )
                                                     ),
                                                     color: Colors.lightBlue,
-                                                    onPressed: () =>  {}
+                                                    onPressed: () =>  {Application.OpenURL("https://github.com/yoshiaki-shiokawa/Just-Right/issues");}
                                                 )
                                             )
                                         }
