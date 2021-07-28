@@ -234,7 +234,6 @@ class MyMenuWidgetState : State<MyMenuStatefulWidget>
     {
         var controller = new PageController();
 
-
         return new MaterialApp(
             home: new Scaffold(
                 body: new Unity.UIWidgets.widgets.Stack(
@@ -263,7 +262,7 @@ class MyMenuWidgetState : State<MyMenuStatefulWidget>
                                     new Column(
                                         crossAxisAlignment: CrossAxisAlignment.center,
                                         children: Buttons(1, 10)
-                                    ),
+                                    )/*,
                                     new Column(
                                         crossAxisAlignment: CrossAxisAlignment.center,
                                         children: Buttons(2, 10)
@@ -272,6 +271,7 @@ class MyMenuWidgetState : State<MyMenuStatefulWidget>
                                         crossAxisAlignment: CrossAxisAlignment.center,
                                         children: Buttons(3, 10)
                                     )
+                                    */
                                 }
                             )
                         ),
@@ -284,6 +284,7 @@ class MyMenuWidgetState : State<MyMenuStatefulWidget>
                                 onPressed: () => { SceneManager.LoadSceneAsync("StartScene", LoadSceneMode.Single); }
                             )
                         )
+                        
                     }
                 )
             )
